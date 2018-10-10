@@ -1,4 +1,5 @@
 echo "Welcome to my simple 'git config' script!"
+echo "Usage: git-config.sh [local | global | system] [user name] [user email]"
 
 OPTIONS="local global system"
 OPTION=$1
