@@ -6,8 +6,6 @@ echo "Welcome to my simple 'Multiple Maven projects clean script!"
 usage
 
 DIRECTORY=$1
-USERNAME=$2
-USEREMAIL=$3
 
 CURRENT_DIRECTORY="$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )"
 
