@@ -16,6 +16,6 @@ if [ "$CONTAINER_ID" = "" ]; then
     sudo docker run --hostname my-rabbit --name $CONTAINER_NAME -p 5671:5671 -p 5672:5672 -p 15672:15672 $IMAGE_NAME
 else
     echo "Found docker container with name $CONTAINER_NAME, starting..."
-    sudo docker container start $CONTAINER_NAME
+    sudo docker container start $CONTAINER_NAME &
 fi
 

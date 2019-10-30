@@ -16,7 +16,7 @@ if [ "$CONTAINER_ID" = "" ]; then
     sudo docker run --name $CONTAINER_NAME -p 5432:5432 -e POSTGRES_PASSWORD=postgres $IMAGE_NAME
 else
     echo "Found docker container with name $CONTAINER_NAME, starting..."
-    sudo docker container start $CONTAINER_NAME
+    sudo docker container start $CONTAINER_NAME &
 fi
 
 echo "Info :: Exposed from the container '5432' port is not binded by default, do it manually using parameter '-p EXPOSED_PORT:HOST_PORT'"
